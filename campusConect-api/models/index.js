@@ -9,10 +9,10 @@ db.sequelize = sequelize;
 // Aquí puedes importar y definir tus modelos
 // Importar modelos
 db.User = require('./user')(sequelize, DataTypes);
-db.Publicacion = require('./asistencia')(sequelize, DataTypes);
+db.Publicacion = require('./publicacion')(sequelize, DataTypes);
 db.Comentario = require('./comentario')(sequelize, DataTypes);
 db.Fuente = require('./fuente')(sequelize, DataTypes);
-db.Asistencia = require('./publicacion')(sequelize, DataTypes);
+db.Asistencia = require('./asistencia')(sequelize, DataTypes);
 
 // Definir asociaciones aquí
 Object.keys(db).forEach(modelName => {

@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   const Asistencia = sequelize.define('Asistencia', {
-    idUsuario: {
+    idUser: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,

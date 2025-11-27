@@ -23,14 +23,14 @@ module.exports = (sequelize, DataTypes) => {
         len: [3, 255]
       }
     },
-    Contenido: {
+    contenido: {
       type: DataTypes.TEXT,
       allowNull: false,
       validate: {
         notEmpty: true
       }
     },
-    Categoria: {
+    categoria: {
       type: DataTypes.STRING,
       allowNull: true
     },
