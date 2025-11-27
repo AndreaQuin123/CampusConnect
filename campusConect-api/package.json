@@ -1,0 +1,32 @@
+{
+  "name": "campusconect-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "db:create": "sequelize-cli db:create",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:m:undo": "sequelize-cli db:migrate:undo:all"
+  },
+  "dependencies": {
+    "@sequelize/mysql": "^7.0.0-alpha.47",
+    "@sequelize/postgres": "^7.0.0-alpha.47",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "http-errors": "~1.6.3",
+    "jade": "^1.9.2",
+    "morgan": "^1.10.1",
+    "mysql2": "^3.15.3",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "sequelize-cli": "^6.6.3"
+  }
+}
