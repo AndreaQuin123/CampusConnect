@@ -23,6 +23,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/api/users', usuariosRouter);
 
+var publicacionesRouter = require('./routes/publicaciones');
+app.use('/api/publicaciones', publicacionesRouter);
+
+
 var swaggerJsDoc = require('swagger-jsdoc');
 var swaggerUI = require('swagger-ui-express');
 
